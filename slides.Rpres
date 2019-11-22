@@ -1,0 +1,75 @@
+slides
+========================================================
+author: Rad Nair
+date: 11/22/2019
+autosize: true
+
+Page 1
+========================================================
+
+For more details on authoring R presentations please visit <https://support.rstudio.com/hc/en-us/articles/200486468>.
+
+Week 4 - Final Project
+
+Instructions:
+
+1. Shiny application with supporting documentation.
+
+2. Deployment of the application on Rstudio's shiny server
+
+3. Share the link of application 
+
+4. Share your server.R and ui.R code on github
+
+
+
+Page 2
+=========================================================
+Application usage instructions
+
+
+The Hurricane factor chart will be visible on selection of the items from factors dropdown at the left panel.
+
+The application is running on https://rkbnair.shinyapps.io/Week4Project/
+
+
+ui.R, and Server.R Code in my github repository (https://github.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx)
+
+
+
+Page 3
+========================================================
+
+```{r}
+setwd("C:\\DS\\wk4")
+Hrs <- read.csv("./Hurricanes.csv")
+
+head(Hrs)
+
+```
+
+Page 4
+========================================================
+
+```{r, echo=FALSE}
+plot(x=Hrs$Years,y=Hrs[,"Tropical.Wind"],
+         main="Chart",
+         ylab="Number of Hurricanes in Gulf of Mexico",
+         xlab="Year", col="red")
+
+
+```
+
+Page 5
+========================================================
+
+Summary
+
+The Reproducible Pitch Presentation
+
+A web page using Rstudio Presenter is created with with this html5 slide deck.
+
+
+
+
+
